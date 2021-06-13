@@ -1,0 +1,33 @@
+[variant] {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-#{$value});
+  border: var(--app-size-border) solid var(--app-color-#{$value});
+
+  & + & {
+    margin-top: .5rem;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: var(--app-color-#{$value}-shade);
+    box-shadow: 0 0 0 .25rem rgba(var(--app-color-#{$value}-rgb), .3);
+  }
+
+  &:disabled, &[readonly] {
+    opacity: 1;
+    background: var(--app-color-background-shade);
+    border-color: var(--app-color-medium);
+  }
+
+  &[type=file] {
+    overflow: hidden;
+
+    &:not(:disabled):not([readonly]) {
+      cursor: pointer;
+    }
+  }
+}

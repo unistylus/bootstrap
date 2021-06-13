@@ -1,0 +1,34 @@
+[variant] {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-#{$value1});
+  border: var(--app-size-border) solid var(--app-color-#{$value1});
+  padding: (.375rem * #{$value2}) (.75rem * #{$value2});
+  font-size: calc(#{$value2} * var(--app-size-font));
+
+  & + & {
+    margin-top: .5rem;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: var(--app-color-#{$value1}-shade);
+    box-shadow: 0 0 0 .25rem rgba(var(--app-color-#{$value1}-rgb), .3);
+  }
+
+  &:disabled, &[readonly] {
+    opacity: 1;
+    background: var(--app-color-background-shade);
+    border-color: var(--app-color-medium);
+  }
+
+  &[type=file] {
+    overflow: hidden;
+
+    &:not(:disabled):not([readonly]) {
+      cursor: pointer;
+    }
+  }
+}
