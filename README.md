@@ -7,21 +7,25 @@ Homepage: [https://unistylus.lamnhan.com](https://unistylus.lamnhan.com)
 - Install SCSS:
 
 ```sh
-npm install --save @lamnhan/unistylus-bootstrap
+npm install --save @unistylus/bootstrap
 ```
 
 Use SCSS:
 
 ```scss
-@import '@lamnhan/unistylus-bootstrap/full';
+@import '@unistylus/bootstrap/reset';
+@import '@unistylus/bootstrap/core';
+@import '@unistylus/bootstrap/...';
 ```
 
 - Use CSS from a CDN:
 
 ```html
-https://unpkg.com/@lamnhan/unistylus-bootstrap-css@latest/full.css
+https://unpkg.com/@unistylus/bootstrap-css@latest/reset.min.css
+https://unpkg.com/@unistylus/bootstrap-css@latest/core.min.css
+https://unpkg.com/@unistylus/bootstrap-css@latest/....min.css
 ```
 
 ### License
 
-**@lamnhan/unistylus-bootstrap** and **@lamnhan/unistylus-bootstrap-css** are released under the [MIT](https://github.com/lamnhan/unistylus-bootstrap/blob/master/LICENSE) license.
+**@unistylus/bootstrap** and **@unistylus/bootstrap-css** are released under the [MIT](https://github.com/unistylus/bootstrap/blob/master/LICENSE) license.
