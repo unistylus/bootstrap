@@ -3,9 +3,9 @@
   padding: .375rem .75rem;
   background: none;
   border: none;
-  color: var(--app-color-foreground);
   border: var(--app-size-border) solid rgba(0, 0, 0, 0);
   border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
 
   & + & {
     margin-right: .5rem;
@@ -13,9 +13,9 @@
 
   &:hover {
     outline: 0;
-    background: var(--app-color-foreground-shade);
     text-decoration: none;
-    color: var(--app-color-foreground-shade);
+    background: var(--app-color-background-shade);
+    color: var(--app-color-background-contrast);
   }
   
   &:focus, &:active {
@@ -25,8 +25,8 @@
 
   &:disabled {
     opacity: 1;
-    background: rgba(var(--app-color-foreground-rgb), .5);
     box-shadow: none;
-    color: rgba(var(--app-color-foreground), .5);
+    background: rgba(var(--app-color-medium-rgb), .5);
+    color: rgba(var(--app-color-medium-contrast), .5);
   }
 }

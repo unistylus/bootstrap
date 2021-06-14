@@ -19,9 +19,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--app-color-background);
+    background-color: var(--app-color-medium-tint);
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 20px;
 
     &:before {
       position: absolute;
@@ -30,33 +31,21 @@
       width: 15px;
       left: 3px;
       bottom: 3px;
-      background-color: var(--app-color-foreground);
+      background-color: var(--app-color-medium-contrast);
       -webkit-transition: .4s;
       transition: .4s;
+      border-radius: 50%;
     }
-
-    /* Rounded sliders */
-    &.round {
-      border-radius: 20px;
-
-      &:before {
-        border-radius: 50%;
-      }
-    }    
   }
   
   input:checked + .slider {
-    background-color: var(--app-color-background);
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px var(--app-color-background);
+    background-color: var(--app-color-foreground-tint);
   }
   
   input:checked + .slider:before {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px);
-    background-color: var(--app-color-foreground);
+    background-color: var(--app-color-foreground-contrast);
   }
 }
