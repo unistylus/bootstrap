@@ -1,4 +1,4 @@
-[default] {
+@mixin _base {
   display: inline-block;
   content: '';
   background-repeat: no-repeat;
@@ -6,5 +6,13 @@
   background-position: center;
   width: 2rem;
   height: 2rem;
+}
+
+[default] {
+  @include _base;
   filter: var(--app-recolor-foreground);
+}
+
+.icon-raw {
+  @include _base;
 }
