@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: #{$value}rem;
-  height: #{$value}rem;
-  filter: var(--app-recolor-foreground);
+  width: #{$value2}rem;
+  height: #{$value2}rem;
+  filter: var(--app-recolor-#{$value1});
 }
