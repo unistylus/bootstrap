@@ -1,0 +1,29 @@
+.form-control-warning-lg {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-warning);
+  border: var(--app-size-border) solid var(--app-color-warning);
+  padding: 0.45rem 0.9rem;
+  font-size: calc(1.2 * var(--app-size-font));
+}
+.form-control-warning-lg + .form-control-warning-lg {
+  margin-top: 0.5rem;
+}
+.form-control-warning-lg:focus {
+  outline: 0;
+  border-color: var(--app-color-warning-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-warning-rgb), 0.3);
+}
+.form-control-warning-lg:disabled, .form-control-warning-lg[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-warning-lg[type=file] {
+  overflow: hidden;
+}
+.form-control-warning-lg[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

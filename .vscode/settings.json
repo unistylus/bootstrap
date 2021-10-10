@@ -4,7 +4,7 @@
     "package-lock.json": true,
     ".vscode/": true,
     "dist/": true,
-    "**/*.css": true,
-    "**/*.css.map": true,
+    "docs/": true,
+    "test/": true,
   }
 }

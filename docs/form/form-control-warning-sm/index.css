@@ -1,0 +1,29 @@
+.form-control-warning-sm {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-warning);
+  border: var(--app-size-border) solid var(--app-color-warning);
+  padding: 0.3rem 0.6rem;
+  font-size: calc(0.8 * var(--app-size-font));
+}
+.form-control-warning-sm + .form-control-warning-sm {
+  margin-top: 0.5rem;
+}
+.form-control-warning-sm:focus {
+  outline: 0;
+  border-color: var(--app-color-warning-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-warning-rgb), 0.3);
+}
+.form-control-warning-sm:disabled, .form-control-warning-sm[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-warning-sm[type=file] {
+  overflow: hidden;
+}
+.form-control-warning-sm[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

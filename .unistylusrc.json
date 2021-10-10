@@ -1,4 +1,4 @@
 {
-  "src": "src",
-  "out": "dist/bootstrap"
+  "out": "dist/bootstrap",
+  "webCopies": ["CNAME"]
 }

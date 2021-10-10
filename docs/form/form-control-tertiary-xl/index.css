@@ -1,0 +1,29 @@
+.form-control-tertiary-xl {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-tertiary);
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  padding: 0.5625rem 1.125rem;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.form-control-tertiary-xl + .form-control-tertiary-xl {
+  margin-top: 0.5rem;
+}
+.form-control-tertiary-xl:focus {
+  outline: 0;
+  border-color: var(--app-color-tertiary-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-tertiary-rgb), 0.3);
+}
+.form-control-tertiary-xl:disabled, .form-control-tertiary-xl[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-tertiary-xl[type=file] {
+  overflow: hidden;
+}
+.form-control-tertiary-xl[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.form-control-tertiary-xs {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-tertiary);
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  padding: 0.225rem 0.45rem;
+  font-size: calc(0.6 * var(--app-size-font));
+}
+.form-control-tertiary-xs + .form-control-tertiary-xs {
+  margin-top: 0.5rem;
+}
+.form-control-tertiary-xs:focus {
+  outline: 0;
+  border-color: var(--app-color-tertiary-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-tertiary-rgb), 0.3);
+}
+.form-control-tertiary-xs:disabled, .form-control-tertiary-xs[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-tertiary-xs[type=file] {
+  overflow: hidden;
+}
+.form-control-tertiary-xs[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

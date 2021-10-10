@@ -1,0 +1,29 @@
+.form-control-foreground-lg {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
+  border: var(--app-size-border) solid var(--app-color-foreground);
+  padding: 0.45rem 0.9rem;
+  font-size: calc(1.2 * var(--app-size-font));
+}
+.form-control-foreground-lg + .form-control-foreground-lg {
+  margin-top: 0.5rem;
+}
+.form-control-foreground-lg:focus {
+  outline: 0;
+  border-color: var(--app-color-foreground-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-foreground-rgb), 0.3);
+}
+.form-control-foreground-lg:disabled, .form-control-foreground-lg[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-foreground-lg[type=file] {
+  overflow: hidden;
+}
+.form-control-foreground-lg[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

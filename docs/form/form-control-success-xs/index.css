@@ -1,0 +1,29 @@
+.form-control-success-xs {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-success);
+  border: var(--app-size-border) solid var(--app-color-success);
+  padding: 0.225rem 0.45rem;
+  font-size: calc(0.6 * var(--app-size-font));
+}
+.form-control-success-xs + .form-control-success-xs {
+  margin-top: 0.5rem;
+}
+.form-control-success-xs:focus {
+  outline: 0;
+  border-color: var(--app-color-success-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-success-rgb), 0.3);
+}
+.form-control-success-xs:disabled, .form-control-success-xs[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-success-xs[type=file] {
+  overflow: hidden;
+}
+.form-control-success-xs[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

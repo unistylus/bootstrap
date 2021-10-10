@@ -1,0 +1,9 @@
+.badge-foreground {
+  border: none;
+  border-radius: var(--app-size-radius);
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: var(--app-color-foreground);
+  color: var(--app-color-foreground-contrast);
+}

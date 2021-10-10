@@ -1,0 +1,29 @@
+.form-control-light-lg {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-light);
+  border: var(--app-size-border) solid var(--app-color-light);
+  padding: 0.45rem 0.9rem;
+  font-size: calc(1.2 * var(--app-size-font));
+}
+.form-control-light-lg + .form-control-light-lg {
+  margin-top: 0.5rem;
+}
+.form-control-light-lg:focus {
+  outline: 0;
+  border-color: var(--app-color-light-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-light-rgb), 0.3);
+}
+.form-control-light-lg:disabled, .form-control-light-lg[readonly] {
+  opacity: 1;
+  background: var(--app-color-background-shade);
+  border-color: var(--app-color-medium);
+}
+.form-control-light-lg[type=file] {
+  overflow: hidden;
+}
+.form-control-light-lg[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
