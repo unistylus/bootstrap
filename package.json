@@ -1,6 +1,6 @@
 {
   "name": "@unistylus/bootstrap",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The Unistylus Bootstrap soul",
   "author": "Lam Nhan",
   "homepage": "https://unistylus.lamnhan.com",
@@ -37,7 +37,7 @@
     "@unistylus/core": "0.0.9"
   },
   "devDependencies": {
-    "@unistylus/cli": "0.0.3",
+    "@unistylus/cli": "0.0.4",
     "clean-css-cli": "^5.3.0",
     "cpy-cli": "^3.1.1",
     "sass": "^1.34.1"

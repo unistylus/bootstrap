@@ -8,12 +8,14 @@
   <link rel="icon" type="image/x-icon" href="https://unistylus.lamnhan.com/favicon.ico">
   <title>Unistylus: @unistylus/bootstrap</title>
   <meta name="description" content="The Unistylus Bootstrap soul">
-  <!-- Helper style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/core@latest/css/skins/light-default.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@latest/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@latest/core.css">
+  <!-- All skins -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/skins/light-default.css">
+<link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/skins/dark.css">
+  <!-- Basic style -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/core.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.3/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.4/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -23,6 +25,12 @@
 <header class="uw_global-header">
   <div class="brand">
     <a href="/">@unistylus/bootstrap</a>
+  </div>
+  <div class="skins">
+    <select id="skin-selector">
+      <option value="light">Light (default)</option>
+<option value="dark">Dark</option>
+    </select>
   </div>
   <nav class="nav">
     <a href="/">Home</a>
@@ -34,15 +42,38 @@
   <section class="uw_global-major">
     
     <main class="uw_global-content">
-<p><strong>TODO</strong>: Add group browsing, search all parts, ...</p>
-<p>In the mean time, use the direct urls:</p>
+<p>Browse parts:</p>
 <ul>
-  <li><a href="/core">/core</a></li>
-  <li><a href="/content/text-primary">/content/text-primary</a></li>
-  <li><a href="/form/form-control">/form/form-control</a></li>
-  <li><a href="/components/button-secondary">/components/button-secondary</a></li>
-  <li><a href="/utilities/background-success">/utilities/background-success</a></li>
-  <li>...</li>
+  
+    <li class="file">
+<a href="/core">core.scss</a>
+    </li>
+  
+
+    <li class="file">
+<a href="/reset">reset.scss</a>
+    </li>
+  
+
+    <li class="folder">
+<a href="/components">components</a>
+    </li>
+  
+
+    <li class="folder">
+<a href="/content">content</a>
+    </li>
+  
+
+    <li class="folder">
+<a href="/form">form</a>
+    </li>
+  
+
+    <li class="folder">
+<a href="/utilities">utilities</a>
+    </li>
+  
 </ul>
     </main>
   </section>
@@ -58,7 +89,7 @@
     
 
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.3/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.4/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
 </body>

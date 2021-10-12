@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="https://unistylus.lamnhan.com/favicon.ico">
-  <title>Unistylus: @unistylus/bootstrap</title>
+  <title>Unistylus: @unistylus/bootstrap/components</title>
   <meta name="description" content="The Unistylus Bootstrap soul">
-  <!-- Helper style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/core@latest/css/skins/light-default.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@latest/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@latest/core.css">
+  <!-- All skins -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/skins/light-default.css">
+<link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/skins/dark.css">
+  <!-- Basic style -->
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.10/core.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.3/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.4/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -23,6 +25,12 @@
 <header class="uw_global-header">
   <div class="brand">
     <a href="/">@unistylus/bootstrap</a>
+  </div>
+  <div class="skins">
+    <select id="skin-selector">
+      <option value="light">Light (default)</option>
+<option value="dark">Dark</option>
+    </select>
   </div>
   <nav class="nav">
     <a href="/">Home</a>
@@ -34,7 +42,104 @@
   <section class="uw_global-major">
     
     <main class="uw_global-content">
-  <p><strong>TODO</strong>: List parts belong to the group: components.</p>
+  <p>Browse group:</p>
+  <ul>
+    
+<li>
+  <a href="/components/alert-all">alert</a>
+</li>
+    
+
+<li>
+  <a href="/components/alert-outline-all">alert-outline</a>
+</li>
+    
+
+<li>
+  <a href="/components/badge-all">badge</a>
+</li>
+    
+
+<li>
+  <a href="/components/badge-outline-all">badge-outline</a>
+</li>
+    
+
+<li>
+  <a href="/components/button-all">button</a>
+</li>
+    
+
+<li>
+  <a href="/components/button-clear-all">button-clear</a>
+</li>
+    
+
+<li>
+  <a href="/components/button-link-all">button-link</a>
+</li>
+    
+
+<li>
+  <a href="/components/button-outline-all">button-outline</a>
+</li>
+    
+
+<li>
+  <a href="/components/card-all">card</a>
+</li>
+    
+
+<li>
+  <a href="/components/icon-all">icon</a>
+</li>
+    
+
+<li>
+  <a href="/components/icon-raw-all">icon-raw</a>
+</li>
+    
+
+<li>
+  <a href="/components/list-all">list</a>
+</li>
+    
+
+<li>
+  <a href="/components/modal-alert-all">modal-alert</a>
+</li>
+    
+
+<li>
+  <a href="/components/modal-all">modal</a>
+</li>
+    
+
+<li>
+  <a href="/components/table-all">table</a>
+</li>
+    
+
+<li>
+  <a href="/components/table-bordered-all">table-bordered</a>
+</li>
+    
+
+<li>
+  <a href="/components/table-borderless-all">table-borderless</a>
+</li>
+    
+
+<li>
+  <a href="/components/table-hover-all">table-hover</a>
+</li>
+    
+
+<li>
+  <a href="/components/table-striped-all">table-striped</a>
+</li>
+    
+  </ul>
 </main>
   </section>
   
@@ -49,7 +154,7 @@
     
 
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.3/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.4/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
 </body>
