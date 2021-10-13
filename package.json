@@ -1,6 +1,6 @@
 {
   "name": "@unistylus/bootstrap",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "The Unistylus Bootstrap soul",
   "author": "Lam Nhan",
   "homepage": "https://unistylus.lamnhan.com",
@@ -34,7 +34,7 @@
     "url": "https://github.com/unistylus/bootstrap/issues"
   },
   "dependencies": {
-    "@unistylus/core": "0.0.9"
+    "@unistylus/core": "0.0.5"
   },
   "devDependencies": {
     "@unistylus/cli": "0.0.4",
