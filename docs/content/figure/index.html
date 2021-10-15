@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="https://unistylus.lamnhan.com/favicon.ico">
   <title>Unistylus: @unistylus/bootstrap/content/figure</title>
-  <meta name="description" content="The Unistylus Bootstrap soul">
+  <meta name="description" content="The Unistylus Bootstrap collection">
   <!-- All skins -->
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/skins/light-default.css">
 <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/skins/dark.css">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/core.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.4/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.5/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -28,7 +28,8 @@
   </div>
   <div class="skins">
     <select id="skin-selector">
-      <option value="light">Light (default)</option>
+      <option value="0" disabled>Select a skin</option>
+      <option value="light">Light</option>
 <option value="dark">Dark</option>
     </select>
   </div>
@@ -39,13 +40,49 @@
 </header>
     
 
-  <section class="uw_global-major">
+  <main class="uw_global-major">
     
-    <main class="uw_global-content"><figure class="figure" style="width: 500px;">
+<section class="section preview">
+  <div class="head">Preview</div>
+  <div class="body">
+    <div class="inner">
+<figure class="figure" style="width: 500px;">
   <img class="image" src="https://via.placeholder.com/1000x800">
   <figcaption class="figure-caption">A caption for the above image.</figcaption>
-</figure></main>
-  </section>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="head">Usage</div>
+  <div class="body">
+    <p>Step 1: <strong>Import the style</strong></p>
+<ul>
+<li>Using the CLI:</li>
+</ul>
+<pre><code class="language-bash">unistylus <span class="token function">add</span> <span class="token string">"content/figure"</span>
+</code></pre>
+<ul>
+<li>Or, include SCSS:</li>
+</ul>
+<pre><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">'@unistylus/bootstrap/content/figure'</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Or, include CSS:</li>
+</ul>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@unistylus/bootstrap-css@0.0.11/content/figure.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Step 2: <strong>Use the class</strong></p>
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>figure<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://via.placeholder.com/1000x800<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>figure-caption<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>A caption for the above image.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+</section>
+    
+  </main>
   
   
 <footer class="uw_global-footer">
@@ -58,7 +95,7 @@
     
 
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.4/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.5/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
 </body>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="https://unistylus.lamnhan.com/favicon.ico">
   <title>Unistylus: @unistylus/bootstrap/utilities</title>
-  <meta name="description" content="The Unistylus Bootstrap soul">
+  <meta name="description" content="The Unistylus Bootstrap collection">
   <!-- All skins -->
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/skins/light-default.css">
 <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/skins/dark.css">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/@unistylus/bootstrap-css@0.0.11/core.css">
   <!-- Global style -->
-  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.4/assets/styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/@unistylus/cli@0.0.5/assets/styles/index.css">
   <!-- Main style -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -28,7 +28,8 @@
   </div>
   <div class="skins">
     <select id="skin-selector">
-      <option value="light">Light (default)</option>
+      <option value="0" disabled>Select a skin</option>
+      <option value="light">Light</option>
 <option value="dark">Dark</option>
     </select>
   </div>
@@ -39,12 +40,13 @@
 </header>
     
 
-  <section class="uw_global-major">
+  <main class="uw_global-major">
     
-    <main class="uw_global-content">
-  <p>Browse group:</p>
-  <ul>
-    
+  <section class="section">
+    <div class="head">Browse parts</div>
+    <div class="body">
+<ul>
+  
 <li>
   <a href="/utilities/background-all">background</a>
 </li>
@@ -89,9 +91,11 @@
   <a href="/utilities/truncate">truncate</a>
 </li>
     
-  </ul>
-</main>
-  </section>
+</ul>
+    </div>
+  </section>   
+
+  </main>
   
   
 <footer class="uw_global-footer">
@@ -104,7 +108,7 @@
     
 
   <!-- Global script -->
-  <script src="https://unpkg.com/@unistylus/cli@0.0.4/assets/scripts/index.js"></script>
+  <script src="https://unpkg.com/@unistylus/cli@0.0.5/assets/scripts/index.js"></script>
   <!-- Main script -->
   <script src="index.js"></script>
 </body>

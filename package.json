@@ -1,7 +1,7 @@
 {
   "name": "@unistylus/bootstrap",
   "version": "0.0.11",
-  "description": "The Unistylus Bootstrap soul",
+  "description": "The Unistylus Bootstrap collection",
   "author": "Lam Nhan",
   "homepage": "https://unistylus.lamnhan.com",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "angular"
   ],
   "scripts": {
-    "scss": "unistylus generate --api",
+    "scss": "unistylus generate",
     "scss-copy": "cpy package.json README.md LICENSE dist/bootstrap",
     "css": "unistylus clean dist/bootstrap-css && sass dist/bootstrap:dist/bootstrap-css",
     "css-copy": "cpy package-css.json dist/bootstrap-css --rename=package.json && cpy README.md LICENSE dist/bootstrap-css",
@@ -23,7 +23,7 @@
     "deploy:scss": "cd dist/bootstrap && npm publish && cd ../../",
     "deploy:css": "cd dist/bootstrap-css && npm publish && cd ../../",
     "deploy:lib": "npm run deploy:scss && npm run deploy:css",
-    "build:app": "unistylus build",
+    "build:app": "unistylus build --api",
     "deploy:app": "git add . && git commit -m 'deploy:app' && git push"
   },
   "repository": {
