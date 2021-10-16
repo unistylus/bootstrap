@@ -1,14 +1,14 @@
 [variant] {
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
+  padding: p('*', .375) p('*', .75);
   background: var(--app-color-background);
   border-radius: var(--app-size-radius);
   color: var(--app-color-#{$value});
   border: var(--app-size-border) solid var(--app-color-#{$value});
 
   & + & {
-    margin-top: .5rem;
+    margin-top: m('*', .5);
   }
 
   &:focus {
@@ -19,8 +19,8 @@
 
   &:disabled, &[readonly] {
     opacity: 1;
-    background: var(--app-color-background-shade);
     border-color: var(--app-color-medium);
+    background: var(--app-color-background-shade);
   }
 
   &[type=file] {

@@ -15,7 +15,7 @@
   "scripts": {
     "scss": "unistylus generate",
     "scss-copy": "cpy package.json README.md LICENSE dist/bootstrap",
-    "css": "unistylus clean dist/bootstrap-css && sass dist/bootstrap:dist/bootstrap-css",
+    "css": "unistylus clean dist/bootstrap-css && sass --load-path=node_modules dist/bootstrap:dist/bootstrap-css",
     "css-copy": "cpy package-css.json dist/bootstrap-css --rename=package.json && cpy README.md LICENSE dist/bootstrap-css",
     "css-min": "cleancss -O2 --source-map --batch --batch-suffix .min -o dist/bootstrap-css dist/bootstrap-css/**/*.css",
     "js": "unistylus js",
@@ -37,7 +37,7 @@
     "url": "https://github.com/unistylus/bootstrap/issues"
   },
   "dependencies": {
-    "@unistylus/core": "0.0.5"
+    "@unistylus/core": "0.0.10"
   },
   "devDependencies": {
     "@unistylus/cli": "0.0.6",

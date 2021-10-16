@@ -1,9 +1,11 @@
+@import '@unistylus/core';
+
 [default] {
   border-radius: var(--app-size-radius);
-  padding: .25em .5em;
+  padding: p('*', .25) p('*', .5);
   font-size: .75em;
   font-weight: 700;
   background: none;
   color: var(--app-color-medium);
-  border: 1px solid var(--app-color-medium);
+  border: b() solid var(--app-color-medium);
 }

@@ -1,6 +1,8 @@
+@import '@unistylus/core';
+
 [default] {
   display: inline-block;
-  padding: .375rem .75rem;
+  padding: p('*', .375) p('*', .75);
   background: none;
   border: none;
   border: var(--app-size-border) solid rgba(0, 0, 0, 0);
@@ -8,7 +10,7 @@
   color: var(--app-color-foreground);
 
   & + & {
-    margin-right: .5rem;
+    margin-right: m('*', .5);
   }
 
   &:hover {

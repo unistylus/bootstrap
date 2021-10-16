@@ -1,8 +1,10 @@
+@import '@unistylus/core';
+
 [default] {
   border: none;
   border-radius: var(--app-size-radius);
-  padding: .25em .5em;
-  font-size: .75em;
+  padding: p('*', .25) p('*', .5);
+  font-size: .75rem;
   font-weight: 700;
   background: var(--app-color-medium);
   color: var(--app-color-medium-contrast);

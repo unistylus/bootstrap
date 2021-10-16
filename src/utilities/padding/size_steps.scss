@@ -1,3 +1,5 @@
+@import '@unistylus/core';
+
 [variant] {
-  padding: #{$value}rem;
+  padding: p('*', #{$value});
 }

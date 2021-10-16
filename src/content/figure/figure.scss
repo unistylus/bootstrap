@@ -1,8 +1,8 @@
 [base] {
   &-caption {
     font-size: .9rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: p('*', .5);
+    padding-bottom: p('*', .5);
     color: var(--app-color-medium);
   }
 }

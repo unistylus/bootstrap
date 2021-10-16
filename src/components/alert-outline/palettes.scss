@@ -1,8 +1,10 @@
+@import '@unistylus/core';
+
 [variant] {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 1rem;
+  padding: p();
   border-radius: var(--app-size-radius);
   font-weight: 500;
   background: none;

@@ -1,3 +1,5 @@
+@import '@unistylus/core';
+
 .article {
 
   h1 {
@@ -6,13 +8,13 @@
   
   h2 {
     font-size: 1.2rem;
-    margin-top: 2rem;
+    margin-top: m('*', 2);
     font-weight: 700;
   }
   
   h3 {
     font-size: 1.1rem;
-    margin-top: 1.5rem;
+    margin-top: m('*', 1.5);
     color: var(--app-color-medium);
     font-weight: 700;
   }

@@ -1,3 +1,5 @@
+@import '@unistylus/core';
+
 [variant] {
   width: 100%;
   text-align: left;
@@ -15,7 +17,7 @@
   }
 
   th, td {
-    padding: .5rem;
+     padding: p('*', .5);
   }
 
   thead th, th, td {

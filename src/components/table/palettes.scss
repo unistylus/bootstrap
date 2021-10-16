@@ -1,3 +1,5 @@
+@import '@unistylus/core';
+
 [variant] {
   width: 100%;
   text-align: left;
@@ -14,7 +16,7 @@
   }
 
   th, td {
-    padding: .5rem;
+     padding: p('*', .5);
     border-bottom: 1px solid var(--app-color-#{$value}-tint);
   }
 

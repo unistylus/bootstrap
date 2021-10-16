@@ -1,3 +1,5 @@
+@import '@unistylus/core';
+
 [default] {
-  padding: 1rem;
+  padding: p();
 }

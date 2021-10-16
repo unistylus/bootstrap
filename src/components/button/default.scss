@@ -1,13 +1,15 @@
+@import '@unistylus/core';
+
 [default] {
   display: inline-block;
   border: none;
   border-radius: var(--app-size-radius);
-  padding: .375rem .75rem;
+  padding: p('*', .375) p('*', .75);
   background: var(--app-color-foreground);
   color: var(--app-color-background); 
 
   & + & {
-    margin-right: .5rem;
+    margin-right: m('*', .5);
   }
 
   &:hover, &:focus, &:active {

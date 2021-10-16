@@ -1,1 +1,1 @@
-console.log('core.ts');
+// No JS

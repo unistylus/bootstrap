@@ -1,14 +1,16 @@
+@import '@unistylus/core';
+
 [variant] {
   display: inline-block;
   border-radius: var(--app-size-radius);
   background: none;
   border: var(--app-size-border) solid var(--app-color-#{$value1});
   color: var(--app-color-#{$value1});
-  padding: (.375rem * #{$value2}) (.75rem * #{$value2});
+  padding: p('*', .375 * #{$value2}) p('*', .75 * #{$value2});
   font-size: calc(#{$value2} * var(--app-size-font));
 
   & + & {
-    margin-right: .5rem;
+    margin-right: m('*', .5);
   }
   
   &:hover, &:focus, &:active {
