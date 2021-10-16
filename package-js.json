@@ -1,0 +1,25 @@
+{
+  "name": "@unistylus/bootstrap-js",
+  "version": "0.0.12",
+  "description": "The Unistylus Bootstrap collection (JS outputs)",
+  "author": "Lam Nhan",
+  "homepage": "https://unistylus.lamnhan.com",
+  "license": "MIT",
+  "main": "full.js",
+  "module": "esm/full.js",
+  "types": "esm/full.d.ts",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "theming",
+    "angular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unistylus/bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unistylus/bootstrap/issues"
+  }
+}

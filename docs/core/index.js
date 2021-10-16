@@ -1,1 +1,1 @@
-// No JS available!
+console.log('core.ts');

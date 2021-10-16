@@ -1,1 +1,1 @@
-// No JS available!
+// No JS

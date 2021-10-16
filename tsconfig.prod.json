@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": "dist/bootstrap",
+    "outDir": "dist/bootstrap-js/esm",
+    "module": "ESNext",
+    "target": "ES5",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "dist/bootstrap/**/*.ts"
+  ]
+}
