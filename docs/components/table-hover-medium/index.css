@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-hover-medium th, .table-hover-medium td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-background-shade);
 }
 .table-hover-medium thead th {

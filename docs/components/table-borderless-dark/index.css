@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 .table-borderless-dark th, .table-borderless-dark td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-borderless-dark thead th, .table-borderless-dark th, .table-borderless-dark td {
   border: none !important;

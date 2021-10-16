@@ -24,7 +24,7 @@
 }
 .card-head .middle {
   flex: 1;
-  margin-left: 1rem;
+  margin-left: var(--app-size-spacing);
 }
 .card-head .middle .major {
   font-size: 1rem;
@@ -43,5 +43,5 @@
   height: 1.2rem;
 }
 .card-body {
-  padding: 1rem 0;
+  padding: var(--app-size-spacing) 0;
 }

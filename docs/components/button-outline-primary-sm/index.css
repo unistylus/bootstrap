@@ -4,11 +4,11 @@
   background: none;
   border: var(--app-size-border) solid var(--app-color-primary);
   color: var(--app-color-primary);
-  padding: 0.3rem 0.6rem;
+  padding: calc(var(--app-size-spacing) * 0.3) calc(var(--app-size-spacing) * 0.6);
   font-size: calc(0.8 * var(--app-size-font));
 }
 .button-outline-primary-sm + .button-outline-primary-sm {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-outline-primary-sm:hover, .button-outline-primary-sm:focus, .button-outline-primary-sm:active {
   outline: 0;

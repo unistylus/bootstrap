@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-tertiary th, .table-bordered-tertiary td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-tertiary thead th, .table-bordered-tertiary th, .table-bordered-tertiary td {
   border: 1px solid var(--app-color-tertiary);

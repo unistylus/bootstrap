@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-light th, .table-bordered-light td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-light thead th, .table-bordered-light th, .table-bordered-light td {
   border: 1px solid var(--app-color-light);

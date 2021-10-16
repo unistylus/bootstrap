@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-secondary th, .table-bordered-secondary td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-secondary thead th, .table-bordered-secondary th, .table-bordered-secondary td {
   border: 1px solid var(--app-color-secondary);

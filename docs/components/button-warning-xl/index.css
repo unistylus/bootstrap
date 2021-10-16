@@ -4,11 +4,11 @@
   border-radius: var(--app-size-radius);
   background: var(--app-color-warning);
   color: var(--app-color-warning-contrast);
-  padding: 0.5625rem 1.125rem;
+  padding: calc(var(--app-size-spacing) * 0.5625) calc(var(--app-size-spacing) * 1.125);
   font-size: calc(1.5 * var(--app-size-font));
 }
 .button-warning-xl + .button-warning-xl {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-warning-xl:hover, .button-warning-xl:focus, .button-warning-xl:active {
   outline: 0;

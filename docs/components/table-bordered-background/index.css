@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-background th, .table-bordered-background td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-background thead th, .table-bordered-background th, .table-bordered-background td {
   border: 1px solid var(--app-color-background);

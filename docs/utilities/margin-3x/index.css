@@ -1,3 +1,3 @@
 .margin-3x {
-  margin: 3rem;
+  margin: calc(var(--app-size-spacing) * 3);
 }

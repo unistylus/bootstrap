@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 .table-borderless th, .table-borderless td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-borderless thead th, .table-borderless th, .table-borderless td {
   border: none !important;

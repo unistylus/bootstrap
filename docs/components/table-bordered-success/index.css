@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-success th, .table-bordered-success td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-success thead th, .table-bordered-success th, .table-bordered-success td {
   border: 1px solid var(--app-color-success);

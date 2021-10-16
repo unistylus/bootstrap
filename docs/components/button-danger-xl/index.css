@@ -4,11 +4,11 @@
   border-radius: var(--app-size-radius);
   background: var(--app-color-danger);
   color: var(--app-color-danger-contrast);
-  padding: 0.5625rem 1.125rem;
+  padding: calc(var(--app-size-spacing) * 0.5625) calc(var(--app-size-spacing) * 1.125);
   font-size: calc(1.5 * var(--app-size-font));
 }
 .button-danger-xl + .button-danger-xl {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-danger-xl:hover, .button-danger-xl:focus, .button-danger-xl:active {
   outline: 0;

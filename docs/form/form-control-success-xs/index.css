@@ -5,11 +5,11 @@
   border-radius: var(--app-size-radius);
   color: var(--app-color-success);
   border: var(--app-size-border) solid var(--app-color-success);
-  padding: 0.225rem 0.45rem;
+  padding: p("*", 0.225) p("*", 0.45);
   font-size: calc(0.6 * var(--app-size-font));
 }
 .form-control-success-xs + .form-control-success-xs {
-  margin-top: 0.5rem;
+  margin-top: m("*", 0.5);
 }
 .form-control-success-xs:focus {
   outline: 0;
@@ -18,8 +18,8 @@
 }
 .form-control-success-xs:disabled, .form-control-success-xs[readonly] {
   opacity: 1;
-  background: var(--app-color-background-shade);
   border-color: var(--app-color-medium);
+  background: var(--app-color-background-shade);
 }
 .form-control-success-xs[type=file] {
   overflow: hidden;

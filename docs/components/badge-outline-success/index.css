@@ -1,9 +1,9 @@
 .badge-outline-success {
   border-radius: var(--app-size-radius);
-  padding: 0.25em 0.5em;
-  font-size: 0.75em;
+  padding: calc(var(--app-size-spacing) * 0.25) calc(var(--app-size-spacing) * 0.5);
+  font-size: 0.75rem;
   font-weight: 700;
   background: none;
   color: var(--app-color-success);
-  border: 1px solid var(--app-color-success);
+  border: var(--app-size-border) solid var(--app-color-success);
 }

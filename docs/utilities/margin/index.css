@@ -1,3 +1,3 @@
 .margin {
-  margin: 1rem;
+  margin: var(--app-size-spacing);
 }

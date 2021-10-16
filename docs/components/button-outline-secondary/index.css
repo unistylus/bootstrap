@@ -1,13 +1,13 @@
 .button-outline-secondary {
   display: inline-block;
   border-radius: var(--app-size-radius);
-  padding: 0.375rem 0.75rem;
+  padding: calc(var(--app-size-spacing) * 0.375) calc(var(--app-size-spacing) * 0.75);
   background: none;
   border: var(--app-size-border) solid var(--app-color-secondary);
   color: var(--app-color-secondary);
 }
 .button-outline-secondary + .button-outline-secondary {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-outline-secondary:hover, .button-outline-secondary:focus, .button-outline-secondary:active {
   outline: 0;

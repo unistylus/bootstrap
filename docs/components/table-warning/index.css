@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-warning th, .table-warning td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-warning-tint);
 }
 .table-warning thead th {

@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-striped-light th, .table-striped-light td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-foreground-shade);
 }
 .table-striped-light thead th {

@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 .table-borderless-success th, .table-borderless-success td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-borderless-success thead th, .table-borderless-success th, .table-borderless-success td {
   border: none !important;

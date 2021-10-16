@@ -1,3 +1,3 @@
 .margin-right-6x {
-  margin-right: 6rem;
+  margin-right: calc(var(--app-size-spacing) * 6);
 }

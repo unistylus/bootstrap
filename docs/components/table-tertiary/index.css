@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-tertiary th, .table-tertiary td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-tertiary-tint);
 }
 .table-tertiary thead th {

@@ -2,12 +2,12 @@
   display: inline-block;
   border: none;
   border-radius: var(--app-size-radius);
-  padding: 0.375rem 0.75rem;
+  padding: calc(var(--app-size-spacing) * 0.375) calc(var(--app-size-spacing) * 0.75);
   background: var(--app-color-light);
   color: var(--app-color-light-contrast);
 }
 .button-light + .button-light {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-light:hover, .button-light:focus, .button-light:active {
   outline: 0;

@@ -4,11 +4,11 @@
   border-radius: var(--app-size-radius);
   background: var(--app-color-dark);
   color: var(--app-color-dark-contrast);
-  padding: 0.3rem 0.6rem;
+  padding: calc(var(--app-size-spacing) * 0.3) calc(var(--app-size-spacing) * 0.6);
   font-size: calc(0.8 * var(--app-size-font));
 }
 .button-dark-sm + .button-dark-sm {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-dark-sm:hover, .button-dark-sm:focus, .button-dark-sm:active {
   outline: 0;

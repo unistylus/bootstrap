@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-striped-medium th, .table-striped-medium td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-foreground-shade);
 }
 .table-striped-medium thead th {

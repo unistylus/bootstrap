@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-bordered-danger th, .table-bordered-danger td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-bordered-danger thead th, .table-bordered-danger th, .table-bordered-danger td {
   border: 1px solid var(--app-color-danger);

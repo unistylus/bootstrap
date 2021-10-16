@@ -1,3 +1,3 @@
 .padding-bottom {
-  padding-bottom: 1rem;
+  padding-bottom: var(--app-size-spacing);
 }

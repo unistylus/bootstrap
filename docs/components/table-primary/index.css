@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .table-primary th, .table-primary td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
   border-bottom: 1px solid var(--app-color-primary-tint);
 }
 .table-primary thead th {

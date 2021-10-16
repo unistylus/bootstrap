@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 .table-borderless-tertiary th, .table-borderless-tertiary td {
-  padding: 0.5rem;
+  padding: calc(var(--app-size-spacing) * 0.5);
 }
 .table-borderless-tertiary thead th, .table-borderless-tertiary th, .table-borderless-tertiary td {
   border: none !important;

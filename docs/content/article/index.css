@@ -3,12 +3,12 @@
 }
 .article h2 {
   font-size: 1.2rem;
-  margin-top: 2rem;
+  margin-top: calc(var(--app-size-spacing) * 2);
   font-weight: 700;
 }
 .article h3 {
   font-size: 1.1rem;
-  margin-top: 1.5rem;
+  margin-top: calc(var(--app-size-spacing) * 1.5);
   color: var(--app-color-medium);
   font-weight: 700;
 }

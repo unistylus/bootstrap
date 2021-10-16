@@ -4,11 +4,11 @@
   background: none;
   border: var(--app-size-border) solid var(--app-color-tertiary);
   color: var(--app-color-tertiary);
-  padding: 0.225rem 0.45rem;
+  padding: calc(var(--app-size-spacing) * 0.225) calc(var(--app-size-spacing) * 0.45);
   font-size: calc(0.6 * var(--app-size-font));
 }
 .button-outline-tertiary-xs + .button-outline-tertiary-xs {
-  margin-right: 0.5rem;
+  margin-right: calc(var(--app-size-spacing) * 0.5);
 }
 .button-outline-tertiary-xs:hover, .button-outline-tertiary-xs:focus, .button-outline-tertiary-xs:active {
   outline: 0;

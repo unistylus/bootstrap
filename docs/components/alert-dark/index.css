@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 1rem;
+  padding: var(--app-size-spacing);
   border-radius: var(--app-size-radius);
   font-weight: 500;
   background: rgba(var(--app-color-dark-rgb), 0.3);
