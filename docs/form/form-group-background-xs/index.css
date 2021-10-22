@@ -1,0 +1,39 @@
+.form-group-background-xs {
+  display: block;
+  width: 100%;
+}
+.form-group-background-xs .form-label {
+  display: inline-block;
+  margin-bottom: calc(var(--app-size-spacing) / 2);
+  font-weight: normal;
+  font-size: calc(0.6 * var(--app-size-font));
+}
+.form-group-background-xs .form-control {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
+  border: var(--app-size-border) solid var(--app-color-background);
+  padding: calc(var(--app-size-spacing) * 0.225) calc(var(--app-size-spacing) * 0.45);
+  font-size: calc(0.6 * var(--app-size-font));
+}
+.form-group-background-xs .form-control + .form-group-background-xs .form-control {
+  margin-top: calc(var(--app-size-spacing) * 0.5);
+}
+.form-group-background-xs .form-control:focus {
+  outline: 0;
+  border-color: var(--app-color-background-shade);
+  box-shadow: 0 0 0 0.15rem rgba(var(--app-color-background-rgb), 0.3);
+}
+.form-group-background-xs .form-control:disabled, .form-group-background-xs .form-control[readonly] {
+  opacity: 1;
+  border-color: var(--app-color-medium);
+  background: var(--app-color-background-shade);
+}
+.form-group-background-xs .form-control[type=file] {
+  overflow: hidden;
+}
+.form-group-background-xs .form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

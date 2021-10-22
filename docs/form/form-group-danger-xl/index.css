@@ -1,0 +1,39 @@
+.form-group-danger-xl {
+  display: block;
+  width: 100%;
+}
+.form-group-danger-xl .form-label {
+  display: inline-block;
+  margin-bottom: calc(var(--app-size-spacing) / 2);
+  font-weight: normal;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.form-group-danger-xl .form-control {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
+  border: var(--app-size-border) solid var(--app-color-danger);
+  padding: calc(var(--app-size-spacing) * 0.5625) calc(var(--app-size-spacing) * 1.125);
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.form-group-danger-xl .form-control + .form-group-danger-xl .form-control {
+  margin-top: calc(var(--app-size-spacing) * 0.5);
+}
+.form-group-danger-xl .form-control:focus {
+  outline: 0;
+  border-color: var(--app-color-danger-shade);
+  box-shadow: 0 0 0 0.375rem rgba(var(--app-color-danger-rgb), 0.3);
+}
+.form-group-danger-xl .form-control:disabled, .form-group-danger-xl .form-control[readonly] {
+  opacity: 1;
+  border-color: var(--app-color-medium);
+  background: var(--app-color-background-shade);
+}
+.form-group-danger-xl .form-control[type=file] {
+  overflow: hidden;
+}
+.form-group-danger-xl .form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

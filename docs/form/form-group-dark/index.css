@@ -1,0 +1,37 @@
+.form-group-dark {
+  display: block;
+  width: 100%;
+}
+.form-group-dark .form-label {
+  display: inline-block;
+  margin-bottom: calc(var(--app-size-spacing) / 2);
+  font-weight: normal;
+}
+.form-group-dark .form-control {
+  display: block;
+  width: 100%;
+  padding: calc(var(--app-size-spacing) * 0.375) calc(var(--app-size-spacing) * 0.75);
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
+  border: var(--app-size-border) solid var(--app-color-dark);
+}
+.form-group-dark .form-control + .form-group-dark .form-control {
+  margin-top: calc(var(--app-size-spacing) * 0.5);
+}
+.form-group-dark .form-control:focus {
+  outline: 0;
+  border-color: var(--app-color-dark-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--app-color-dark-rgb), 0.3);
+}
+.form-group-dark .form-control:disabled, .form-group-dark .form-control[readonly] {
+  opacity: 1;
+  border-color: var(--app-color-medium);
+  background: var(--app-color-background-shade);
+}
+.form-group-dark .form-control[type=file] {
+  overflow: hidden;
+}
+.form-group-dark .form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}

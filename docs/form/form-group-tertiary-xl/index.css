@@ -1,0 +1,39 @@
+.form-group-tertiary-xl {
+  display: block;
+  width: 100%;
+}
+.form-group-tertiary-xl .form-label {
+  display: inline-block;
+  margin-bottom: calc(var(--app-size-spacing) / 2);
+  font-weight: normal;
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.form-group-tertiary-xl .form-control {
+  display: block;
+  width: 100%;
+  background: var(--app-color-background);
+  border-radius: var(--app-size-radius);
+  color: var(--app-color-foreground);
+  border: var(--app-size-border) solid var(--app-color-tertiary);
+  padding: calc(var(--app-size-spacing) * 0.5625) calc(var(--app-size-spacing) * 1.125);
+  font-size: calc(1.5 * var(--app-size-font));
+}
+.form-group-tertiary-xl .form-control + .form-group-tertiary-xl .form-control {
+  margin-top: calc(var(--app-size-spacing) * 0.5);
+}
+.form-group-tertiary-xl .form-control:focus {
+  outline: 0;
+  border-color: var(--app-color-tertiary-shade);
+  box-shadow: 0 0 0 0.375rem rgba(var(--app-color-tertiary-rgb), 0.3);
+}
+.form-group-tertiary-xl .form-control:disabled, .form-group-tertiary-xl .form-control[readonly] {
+  opacity: 1;
+  border-color: var(--app-color-medium);
+  background: var(--app-color-background-shade);
+}
+.form-group-tertiary-xl .form-control[type=file] {
+  overflow: hidden;
+}
+.form-group-tertiary-xl .form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
